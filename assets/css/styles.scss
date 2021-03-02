@@ -591,6 +591,13 @@ a {
             z-index: 9;
         }
         .news-article {
+            &:hover {
+                .article-read-time {
+                    &:after {
+                        width: 75px;
+                    }
+                }
+            }
             a {
                 color: #000;
                 &:hover {
@@ -622,9 +629,10 @@ a {
                 text-transform: uppercase;
                 &:after {
                     content: '';
+                    transition: all 250ms;
                     display: inline-block;
                     position: absolute;
-                    width: 75px;
+                    width: 0;
                     height: 1px;
                     background-color: var(--accent-blue);
                     left: 75px;

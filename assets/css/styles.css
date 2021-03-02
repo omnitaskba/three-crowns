@@ -699,6 +699,10 @@ a.button:hover {
   margin-bottom: 30px;
 }
 
+.news .row .news-article:hover .article-read-time:after {
+  width: 75px;
+}
+
 .news .row .news-article a {
   color: #000;
 }
@@ -737,9 +741,10 @@ a.button:hover {
 
 .news .row .news-article .article-read-time:after {
   content: '';
+  transition: all 250ms;
   display: inline-block;
   position: absolute;
-  width: 75px;
+  width: 0;
   height: 1px;
   background-color: var(--accent-blue);
   left: 75px;
