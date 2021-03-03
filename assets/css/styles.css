@@ -220,11 +220,15 @@ a.button:hover {
 .hero .hero-video {
   position: absolute;
   top: 0;
-  width: 100vw;
+  width: 1920px;
   height: 90vh;
 }
 
-@media (max-width: 1350px) {
+.hero .hero-video video {
+  background-color: #333;
+}
+
+@media (max-width: 500px) {
   .hero .hero-video {
     width: 1400px;
     right: 0;
@@ -501,7 +505,7 @@ a.button:hover {
 @media (max-width: 500px) {
   .portfolio .portfolio-header .carousel-progress {
     position: absolute;
-    width: calc(100vw - 30px);
+    width: calc(100vw - 40px);
     bottom: -12px;
     left: -20px;
   }
@@ -811,7 +815,7 @@ a.button:hover {
 @media (max-width: 500px) {
   .news .news-mobile .news-header .carousel-progress {
     position: absolute;
-    width: calc(100vw - 30px);
+    width: calc(100vw - 40px);
     bottom: -12px;
     left: -20px;
   }
