@@ -921,8 +921,10 @@ footer {
     background: var(--dark-gray);
     z-index: 99;
     &.landing {
+        top: -80px;
         @media (max-width: 767px) {
            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+            top: 0;
         }
         &:after {
             content: '';

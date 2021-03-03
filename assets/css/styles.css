@@ -1074,9 +1074,14 @@ footer {
   z-index: 99;
 }
 
+footer.landing {
+  top: -80px;
+}
+
 @media (max-width: 767px) {
   footer.landing {
     border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    top: 0;
   }
 }
 
