@@ -62,7 +62,8 @@ p {
 }
 
 body {
-  margin: 40px !important;
+  margin: 40px 40px 0 40px !important;
+  border-bottom: 40px solid white;
   font-family: 'Circular Std', sans-serif !important;
   font-weight: 500;
 }
@@ -70,6 +71,7 @@ body {
 @media (max-width: 767px) {
   body {
     margin: 0 !important;
+    border-bottom: none;
   }
 }
 
@@ -124,6 +126,22 @@ a.button:hover {
   background-color: var(--accent-hover);
 }
 
+.helper-line {
+  position: relative;
+}
+
+.helper-line:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100px;
+  background-color: rgba(217, 220, 222, 0.4);
+  z-index: 5;
+  left: -5px;
+}
+
 .article-main {
   position: relative;
 }
@@ -137,7 +155,7 @@ a.button:hover {
   height: calc(100% + 150px);
   top: -150px;
   left: 0;
-  z-index: 999;
+  z-index: 5;
 }
 
 @media (max-width: 767px) {
@@ -156,9 +174,9 @@ a.button:hover {
   width: 2px;
   background-color: rgba(217, 220, 222, 0.4);
   left: -20px;
-  top: -30vh;
-  height: calc(100vh - 300px);
-  z-index: 4;
+  top: 0;
+  height: calc(100vh);
+  z-index: 1;
 }
 
 @media (max-width: 500px) {
@@ -177,6 +195,7 @@ a.button:hover {
   height: 90vh;
   width: 100%;
   position: relative;
+  z-index: 5;
 }
 
 .hero .hide-desktop {
@@ -195,6 +214,7 @@ a.button:hover {
   position: absolute;
   height: 100%;
   width: 100%;
+  z-index: 5;
 }
 
 .hero .hero-video {
@@ -227,10 +247,6 @@ a.button:hover {
   height: 110px;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.21);
-}
-
-.hero .hero-header.parallax {
-  top: 60px;
 }
 
 .hero .hero-header .container {
@@ -290,6 +306,7 @@ a.button:hover {
 
 .hero .container .row .hero-text h1 {
   font-size: 64px;
+  z-index: 9;
 }
 
 @media (max-width: 500px) {
@@ -299,9 +316,11 @@ a.button:hover {
 }
 
 .hero .container .row .hero-text p {
+  z-index: 9;
   line-height: 1.86;
   font-size: 21px;
   color: #fff;
+  opacity: 0.8;
 }
 
 @media (max-width: 500px) {
@@ -739,7 +758,8 @@ a.button:hover {
   margin: 20px 0;
   color: var(--accent-blue);
   position: relative;
-  font-size: 11px;
+  font-size: 12px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -751,8 +771,8 @@ a.button:hover {
   width: 0;
   height: 1px;
   background-color: var(--accent-blue);
-  left: 75px;
-  top: 6px;
+  left: 95px;
+  top: 7px;
 }
 
 .news .row .news-article h3 {
@@ -945,6 +965,8 @@ a.button:hover {
 .team .team-title {
   font-size: 12px;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
 }
 
 @media (max-width: 991px) {
@@ -959,7 +981,7 @@ a.button:hover {
   position: absolute;
   width: 100%;
   background-color: rgba(217, 220, 222, 0.4);
-  bottom: -80px;
+  bottom: 80px;
 }
 
 .team .carousel-progress .carousel-active {
@@ -1044,7 +1066,18 @@ footer {
   position: relative;
   background: var(--dark-gray);
   z-index: 99;
+}
+
+footer.landing {
   top: -80px;
+}
+
+footer.landing:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  height: 40px;
 }
 
 footer .checker-overlay-container {

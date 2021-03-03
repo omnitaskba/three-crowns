@@ -11,7 +11,7 @@ $(document).ready(() => {
     function calcLineHieght() {
         const mainContentHeight = $('.main').height();
         $('.line-container .line').css({
-            height: mainContentHeight + 500 + 'px',
+            // height: mainContentHeight - 5000 + 'px',
         });
     }
 

@@ -57,11 +57,13 @@ p {
 }
 
 body {
-    margin: 40px !important;
+    margin: 40px 40px 0 40px !important;
+    border-bottom: 40px solid white;
     font-family: 'Circular Std', sans-serif !important;
     font-weight: 500;
     @media (max-width: 767px) {
         margin: 0 !important;
+        border-bottom: none;
     }
 }
 
@@ -113,6 +115,21 @@ a {
     }
 }
 
+.helper-line {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 2px;
+        height: 100px;
+        background-color: rgba(217, 220, 222, 0.4);
+        z-index: 5;
+        left: -5px;
+    }
+}
+
 .article-main {
     position: relative;
     &:before {
@@ -124,7 +141,7 @@ a {
         height: calc(100% + 150px);
         top: -150px;
         left: 0;
-        z-index: 999;
+        z-index: 5;
         @media (max-width: 767px) {
             display: none;
         }
@@ -142,9 +159,9 @@ a {
         width: 2px;
         background-color: rgba(217, 220, 222, 0.4);
         left: -20px;
-        top: -30vh;
-        height: calc(100vh - 300px);
-        z-index: 4;
+        top: 0;
+        height: calc(100vh);
+        z-index: 1;
         @media (max-width: 1500px) {
             left: -16px;
         }
@@ -155,6 +172,7 @@ a {
     height: 90vh;
     width: 100%;
     position: relative;
+    z-index: 5;
     .hide-desktop {
         max-width: 250px;
         min-height: 50px;
@@ -167,6 +185,7 @@ a {
         position: absolute;
         height: 100%;
         width: 100%;
+        z-index: 5;
     }
     .hero-video {
         position: absolute;
@@ -193,7 +212,7 @@ a {
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.21);
         &.parallax {
-            top: 60px;
+            // top: 60px;
         }
         .container {
             display: flex;
@@ -242,14 +261,17 @@ a {
                 color: #fff;
                 h1 {
                     font-size: 64px;
+                    z-index: 9;
                     @media (max-width: 500px) {
                         font-size: 32px
                     }
                 }
                 p {
+                    z-index: 9;
                     line-height: 1.86;
                     font-size: 21px;
                     color: #fff;
+                    opacity: 0.8;
                     @media (max-width: 500px) {
                         font-size: 18px;
                     }
@@ -628,7 +650,8 @@ a {
                 margin: 20px 0;
                 color: var(--accent-blue);
                 position: relative;
-                font-size: 11px;
+                font-size: 12px;
+                letter-spacing: 2px;
                 text-transform: uppercase;
                 &:after {
                     content: '';
@@ -638,8 +661,8 @@ a {
                     width: 0;
                     height: 1px;
                     background-color: var(--accent-blue);
-                    left: 75px;
-                    top: 6px;
+                    left: 95px;
+                    top: 7px;
                 }
             }
             h3 {
@@ -807,6 +830,8 @@ a {
     .team-title {
         font-size: 12px;
         text-transform: uppercase;
+        letter-spacing: 2px;
+        opacity: 0.8;
         @media (max-width: 991px) {
             display: inline-block;
             margin-bottom: 40px;
@@ -817,7 +842,7 @@ a {
         position: absolute;
         width: 100%;
         background-color: rgba(217, 220, 222, 0.4);
-        bottom: -80px;
+        bottom: 80px;
         .carousel-active {
             height: 4px;
             position: relative;
@@ -892,7 +917,17 @@ footer {
     position: relative;
     background: var(--dark-gray);
     z-index: 99;
-    top: -80px;
+    
+    &.landing {
+        top: -80px;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            background: #fff;
+            height: 40px;
+        }
+    }
     .checker-overlay-container {
         overflow: visible;
         .checker-overlay {
