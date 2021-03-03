@@ -24,7 +24,7 @@ $(document).ready(() => {
     const scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         lerp: 0.1,
-        smooth: true
+        smooth: true,
     });
 
     console.log(scroll);

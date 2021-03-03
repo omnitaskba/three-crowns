@@ -692,7 +692,6 @@ a {
                 margin: 0 20px;
                 flex: 1;
                 position: relative;
-                top: 200px;
                 height: 2px;
                 background-color: rgba(217, 220, 222, 0.4);
                 @media (max-width: 500px) {
@@ -841,8 +840,12 @@ a {
         height: 2px;
         position: absolute;
         width: 100%;
+        max-width: calc(100vw - 30px) !important;
         background-color: rgba(217, 220, 222, 0.4);
-        bottom: 80px;
+        bottom: 70px;
+        @media (max-width: 500px) {
+            left: 15px;
+        }
         .carousel-active {
             height: 4px;
             position: relative;
@@ -917,15 +920,19 @@ footer {
     position: relative;
     background: var(--dark-gray);
     z-index: 99;
-    
     &.landing {
-        top: -80px;
+        @media (max-width: 767px) {
+           border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+        }
         &:after {
             content: '';
             position: absolute;
             width: 100%;
             background: #fff;
             height: 40px;
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
     }
     .checker-overlay-container {

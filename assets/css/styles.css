@@ -804,7 +804,6 @@ a.button:hover {
   margin: 0 20px;
   flex: 1;
   position: relative;
-  top: 200px;
   height: 2px;
   background-color: rgba(217, 220, 222, 0.4);
 }
@@ -980,8 +979,15 @@ a.button:hover {
   height: 2px;
   position: absolute;
   width: 100%;
+  max-width: calc(100vw - 30px) !important;
   background-color: rgba(217, 220, 222, 0.4);
-  bottom: 80px;
+  bottom: 70px;
+}
+
+@media (max-width: 500px) {
+  .team .carousel-progress {
+    left: 15px;
+  }
 }
 
 .team .carousel-progress .carousel-active {
@@ -1068,8 +1074,10 @@ footer {
   z-index: 99;
 }
 
-footer.landing {
-  top: -80px;
+@media (max-width: 767px) {
+  footer.landing {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  }
 }
 
 footer.landing:after {
@@ -1078,6 +1086,12 @@ footer.landing:after {
   width: 100%;
   background: #fff;
   height: 40px;
+}
+
+@media (max-width: 767px) {
+  footer.landing:after {
+    display: none;
+  }
 }
 
 footer .checker-overlay-container {
