@@ -156,9 +156,9 @@ a.button:hover {
   width: 2px;
   background-color: rgba(217, 220, 222, 0.4);
   left: -20px;
+  top: -30vh;
   height: calc(100vh - 300px);
   z-index: 4;
-  top: -100px;
 }
 
 @media (max-width: 500px) {
@@ -227,6 +227,10 @@ a.button:hover {
   height: 110px;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.hero .hero-header.parallax {
+  top: 60px;
 }
 
 .hero .hero-header .container {
@@ -779,6 +783,8 @@ a.button:hover {
 .news .news-mobile .news-header .carousel-progress {
   margin: 0 20px;
   flex: 1;
+  position: relative;
+  top: 200px;
   height: 2px;
   background-color: rgba(217, 220, 222, 0.4);
 }
@@ -953,7 +959,7 @@ a.button:hover {
   position: absolute;
   width: 100%;
   background-color: rgba(217, 220, 222, 0.4);
-  bottom: 50px;
+  bottom: -80px;
 }
 
 .team .carousel-progress .carousel-active {
@@ -1038,6 +1044,7 @@ footer {
   position: relative;
   background: var(--dark-gray);
   z-index: 99;
+  top: -80px;
 }
 
 footer .checker-overlay-container {

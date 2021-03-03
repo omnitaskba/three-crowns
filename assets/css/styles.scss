@@ -142,9 +142,9 @@ a {
         width: 2px;
         background-color: rgba(217, 220, 222, 0.4);
         left: -20px;
+        top: -30vh;
         height: calc(100vh - 300px);
         z-index: 4;
-        top: -100px;
         @media (max-width: 1500px) {
             left: -16px;
         }
@@ -192,6 +192,9 @@ a {
         height: 110px;
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+        &.parallax {
+            top: 60px;
+        }
         .container {
             display: flex;
             justify-content: space-between;
@@ -665,6 +668,8 @@ a {
             .carousel-progress {
                 margin: 0 20px;
                 flex: 1;
+                position: relative;
+                top: 200px;
                 height: 2px;
                 background-color: rgba(217, 220, 222, 0.4);
                 @media (max-width: 500px) {
@@ -812,7 +817,7 @@ a {
         position: absolute;
         width: 100%;
         background-color: rgba(217, 220, 222, 0.4);
-        bottom: 50px;
+        bottom: -80px;
         .carousel-active {
             height: 4px;
             position: relative;
@@ -887,6 +892,7 @@ footer {
     position: relative;
     background: var(--dark-gray);
     z-index: 99;
+    top: -80px;
     .checker-overlay-container {
         overflow: visible;
         .checker-overlay {
