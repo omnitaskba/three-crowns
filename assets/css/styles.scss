@@ -949,7 +949,9 @@ footer {
     z-index: 99;
     &.landing {
         // top: -80px;
-        min-height: 500px;
+        @media (min-width: 500px) {
+            min-height: 500px;
+        }
         &[data-scroll-section-id] {
             top: -80px;
         }
@@ -1093,8 +1095,8 @@ footer {
         font-size: 14px;
         font-family: 'Poppins', sans-serif;
         position: absolute;
-        bottom: -1px;
-        width: calc(100% - 1px);
+        bottom: 0;
+        width: 100%;
         .padding-mobile {
             @media (max-width: 420px) {
                 padding-left: 45px;

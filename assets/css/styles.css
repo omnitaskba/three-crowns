@@ -1108,8 +1108,10 @@ footer {
   z-index: 99;
 }
 
-footer.landing {
-  min-height: 500px;
+@media (min-width: 500px) {
+  footer.landing {
+    min-height: 500px;
+  }
 }
 
 footer.landing[data-scroll-section-id] {
@@ -1295,8 +1297,8 @@ footer .footer-meta-mobile {
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
   position: absolute;
-  bottom: -1px;
-  width: calc(100% - 1px);
+  bottom: 0;
+  width: 100%;
 }
 
 @media (max-width: 420px) {
