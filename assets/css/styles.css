@@ -1108,6 +1108,10 @@ footer {
   z-index: 99;
 }
 
+footer.landing {
+  min-height: 500px;
+}
+
 footer.landing[data-scroll-section-id] {
   top: -80px;
 }

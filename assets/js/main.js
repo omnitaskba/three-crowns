@@ -30,7 +30,7 @@ $(document).ready(() => {
               lerp: 0.1,
               smooth: true,
             });
-        }, 50);
+        }, 250);
     }
 
 });

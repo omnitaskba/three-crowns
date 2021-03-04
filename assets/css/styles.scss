@@ -949,6 +949,7 @@ footer {
     z-index: 99;
     &.landing {
         // top: -80px;
+        min-height: 500px;
         &[data-scroll-section-id] {
             top: -80px;
         }
