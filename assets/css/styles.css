@@ -1294,6 +1294,9 @@ footer .footer-meta-mobile {
   align-items: center;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
+  position: absolute;
+  bottom: -1px;
+  width: calc(100% - 1px);
 }
 
 @media (max-width: 420px) {

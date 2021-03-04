@@ -1092,6 +1092,9 @@ footer {
         align-items: center;
         font-size: 14px;
         font-family: 'Poppins', sans-serif;
+        position: absolute;
+        bottom: -1px;
+        width: calc(100% - 1px);
         .padding-mobile {
             @media (max-width: 420px) {
                 padding-left: 45px;
