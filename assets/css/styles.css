@@ -1336,6 +1336,7 @@ footer .footer-meta-mobile a {
 }
 
 .quote .quote-author {
+  letter-spacing: 2px;
   display: inline-block;
   color: rgba(105, 117, 125, 0.51);
   text-transform: uppercase;
