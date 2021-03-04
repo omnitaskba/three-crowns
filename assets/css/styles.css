@@ -222,6 +222,7 @@ a.button:hover {
   top: 0;
   width: 1920px;
   height: 90vh;
+  min-width: calc(100vw - 80px);
 }
 
 .hero .hero-video video {
@@ -588,6 +589,12 @@ a.button:hover {
   transition: all 1s;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+  .portfolio a .portfolio-hover-box {
+    height: 600px;
+  }
+}
+
 .portfolio a .portfolio-hover-box .top-text-wrapper {
   transition: transform 1s;
   transform: scale(1) translateY(0);
@@ -741,20 +748,25 @@ a.button:hover {
 .news .row .news-article .article-image-wrapper {
   height: 380px;
   overflow: hidden;
+  transition: all 500ms ease-in-out;
+  border: 0 solid white;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .news .row .news-article .article-image-wrapper img {
   object-fit: cover;
-  transition: transform 500ms;
-  min-height: 100%;
+  transition: transform 500ms ease-in-out;
+  transform: scale(1);
 }
 
 .news .row .news-article .article-image-wrapper:hover {
-  background-size: calc(103% + 10px);
+  border: 15px solid white;
 }
 
 .news .row .news-article .article-image-wrapper:hover img {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .news .row .news-article .article-read-time {
@@ -776,7 +788,7 @@ a.button:hover {
   height: 1px;
   background-color: var(--accent-blue);
   left: 95px;
-  top: 7px;
+  top: 8px;
 }
 
 .news .row .news-article h3 {
@@ -1212,9 +1224,15 @@ footer .footer-meta {
 footer .footer-meta .footer-meta-left {
   display: flex;
   align-items: center;
+  font-size: 14px;
+}
+
+footer .footer-meta .footer-meta-left span {
+  opacity: 0.8;
 }
 
 footer .footer-meta .footer-meta-right a {
+  opacity: 0.8;
   margin-right: 30px;
   color: #fff;
 }

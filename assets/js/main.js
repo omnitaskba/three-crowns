@@ -21,12 +21,16 @@ $(document).ready(() => {
 
     calcLineHieght();
 
-    setTimeout(() => {
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        lerp: 0.1,
-        smooth: true,
-      });
-    }, 50)
+    console.log($(window).width());
+
+    if ($(window).width() > 767) {
+        setTimeout(() => {
+            const scroll = new LocomotiveScroll({
+              el: document.querySelector('[data-scroll-container]'),
+              lerp: 0.1,
+              smooth: true,
+            });
+        }, 50);
+    }
 
 });

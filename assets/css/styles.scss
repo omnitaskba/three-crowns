@@ -193,6 +193,7 @@ a {
         top: 0;
         width: 1920px;
         height: 90vh;
+        min-width: calc(100vw - 80px);
         video {
           background-color: #333;
         }
@@ -496,6 +497,9 @@ a {
             box-sizing: border-box;
             position: relative;
             transition: all 1s;
+            @media (max-width: 1200px) and (min-width: 992px) {
+                height: 600px;
+            }
             .top-text-wrapper {
                 transition: transform 1s;
                 transform: scale(1) translateY(0);
@@ -637,15 +641,20 @@ a {
             .article-image-wrapper {
                 height: 380px;
                 overflow: hidden;
+                transition: all 500ms ease-in-out;
+                border: 0 solid white;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
                 img {
                     object-fit: cover;
-                    transition: transform 500ms;
-                    min-height: 100%;
+                    transition: transform 500ms ease-in-out;
+                    transform: scale(1);
                 }
                 &:hover {
-                    background-size: calc(103% + 10px);
+                    border: 15px solid white;
                     img {
-                        transform: scale(1.05);
+                        transform: scale(1.06);
                     }
                 }
             }
@@ -666,7 +675,7 @@ a {
                     height: 1px;
                     background-color: var(--accent-blue);
                     left: 95px;
-                    top: 7px;
+                    top: 8px;
                 }
             }
             h3 {
@@ -1026,9 +1035,14 @@ footer {
         .footer-meta-left {
             display: flex;
             align-items: center;
+            font-size: 14px;
+            span {
+                opacity: 0.8
+            }
         }
         .footer-meta-right {
             a {
+                opacity: 0.8;
                 margin-right: 30px;
                 @media (max-width: 640px) {
                     margin-right: 10px;
