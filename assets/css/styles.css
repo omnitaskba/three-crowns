@@ -756,6 +756,7 @@ a.button:hover {
 }
 
 .news .row .news-article .article-image-wrapper img {
+  min-height: 100%;
   object-fit: cover;
   transition: transform 500ms ease-in-out;
   transform: scale(1);
@@ -1090,7 +1091,7 @@ footer {
   z-index: 99;
 }
 
-footer.landing {
+footer.landing[data-scroll-section-id] {
   top: -80px;
 }
 

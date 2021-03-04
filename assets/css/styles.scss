@@ -647,6 +647,7 @@ a {
                 display: flex;
                 align-items: center;
                 img {
+                    min-height: 100%;
                     object-fit: cover;
                     transition: transform 500ms ease-in-out;
                     transform: scale(1);
@@ -934,7 +935,10 @@ footer {
     background: var(--dark-gray);
     z-index: 99;
     &.landing {
-        top: -80px;
+        // top: -80px;
+        &[data-scroll-section-id] {
+            top: -80px;
+        }
         @media (max-width: 767px) {
            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
             top: 0;
