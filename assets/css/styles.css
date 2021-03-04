@@ -198,6 +198,7 @@ a.button:hover {
   position: relative;
   z-index: 5;
   max-height: 1000px;
+  min-height: 600px;
 }
 
 .hero .row {
@@ -228,6 +229,7 @@ a.button:hover {
   top: 0;
   width: 1920px;
   height: 90vh;
+  min-height: 600px;
   min-width: calc(100vw - 80px);
 }
 
@@ -429,6 +431,13 @@ a.button:hover {
 @media (max-width: 500px) {
   .what-we-do .what-we-do-text {
     padding: 0;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+  .what-we-do .what-we-do-text {
+    margin-top: 75px;
+    padding-left: 0;
   }
 }
 
@@ -1283,12 +1292,32 @@ footer .footer-meta-mobile {
   font-family: 'Poppins', sans-serif;
 }
 
+@media (max-width: 420px) {
+  footer .footer-meta-mobile .padding-mobile {
+    padding-left: 45px;
+  }
+}
+
 footer .footer-meta-mobile span {
   color: #fff;
 }
 
+@media (max-width: 420px) {
+  footer .footer-meta-mobile span.separator {
+    display: none;
+  }
+}
+
 footer .footer-meta-mobile img {
   width: 42px;
+}
+
+@media (max-width: 420px) {
+  footer .footer-meta-mobile img {
+    position: relative;
+    bottom: -10px;
+    left: -4px;
+  }
 }
 
 footer .footer-meta-mobile a {

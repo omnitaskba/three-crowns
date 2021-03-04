@@ -175,6 +175,7 @@ a {
     position: relative;
     z-index: 5;
     max-height: 1000px;
+    min-height: 600px;
     // background-color: #333;
     .row {
         max-height: 1000px;
@@ -198,6 +199,7 @@ a {
         top: 0;
         width: 1920px;
         height: 90vh;
+        min-height: 600px;
         min-width: calc(100vw - 80px);
         video {
           background-color: #333;
@@ -369,6 +371,10 @@ a {
         padding-bottom: 50px;
         @media (max-width: 500px) {
             padding: 0;
+        }
+        @media (min-width: 501px) and (max-width: 767px) {
+            margin-top: 75px;
+            padding-left: 0;
         }
     }
     @media (max-width: 500px) {
@@ -1085,11 +1091,26 @@ footer {
         align-items: center;
         font-size: 14px;
         font-family: 'Poppins', sans-serif;
+        .padding-mobile {
+            @media (max-width: 420px) {
+                padding-left: 45px;
+            }
+        }
         span {
             color: #fff;
+            &.separator {
+                @media (max-width: 420px) {
+                    display: none;
+                }
+            }
         }
         img {
             width: 42px;
+            @media (max-width: 420px) {
+                position: relative;
+                bottom: -10px;
+                left: -4px;
+            }
         }
         a {
             color: #fff;
