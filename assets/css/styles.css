@@ -1304,6 +1304,18 @@ footer .footer-meta-mobile {
 }
 
 @media (max-width: 420px) {
+  footer .footer-meta-mobile {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  footer .footer-meta-mobile {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
   footer .footer-meta-mobile .padding-mobile {
     padding-left: 45px;
   }
@@ -1313,7 +1325,7 @@ footer .footer-meta-mobile span {
   color: #fff;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 320px) {
   footer .footer-meta-mobile span.separator {
     display: none;
   }
@@ -1323,7 +1335,7 @@ footer .footer-meta-mobile img {
   width: 42px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 320px) {
   footer .footer-meta-mobile img {
     position: relative;
     bottom: -10px;
