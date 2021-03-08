@@ -256,44 +256,6 @@ a.button:hover {
   opacity: 0.8;
 }
 
-.hero .hero-header {
-  z-index: 99;
-  position: absolute;
-  top: 0;
-  height: 110px;
-  width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
-}
-
-.hero .hero-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero .hero-header .container .header-logo {
-  max-width: 225px;
-}
-
-.hero .hero-header .container .header-logo img {
-  width: 100%;
-}
-
-@media (max-width: 500px) {
-  .hero .hero-header {
-    height: 55px;
-  }
-  .hero .hero-header .button {
-    display: none;
-  }
-  .hero .hero-header .container .header-logo {
-    max-width: 200px;
-  }
-  .hero .hero-header .container .header-logo img {
-    width: 100%;
-  }
-}
-
 .hero .container {
   height: 100%;
   position: relative;
@@ -381,6 +343,58 @@ a.button:hover {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
+}
+
+.hero-header {
+  z-index: 99;
+  position: absolute;
+  margin-top: 40px;
+  top: 0;
+  height: 110px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+@media (min-width: 768px) {
+  .hero-header {
+    max-width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-header {
+    margin-top: 0;
+  }
+}
+
+.hero-header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-header .container .header-logo {
+  max-width: 225px;
+}
+
+.hero-header .container .header-logo img {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .hero-header {
+    height: 55px;
+  }
+  .hero-header .button {
+    display: none;
+  }
+  .hero-header .container .header-logo {
+    max-width: 200px;
+  }
+  .hero-header .container .header-logo img {
+    width: 100%;
+  }
 }
 
 @keyframes underline-animation {
@@ -1108,12 +1122,6 @@ footer {
   z-index: 99;
 }
 
-@media (min-width: 500px) {
-  footer.landing {
-    min-height: 500px;
-  }
-}
-
 footer.landing[data-scroll-section-id] {
   top: -80px;
 }
@@ -1150,12 +1158,6 @@ footer .checker-overlay-container .checker-overlay {
   left: 15px;
   top: -70px;
   z-index: 9;
-}
-
-@media (min-width: 501px) {
-  footer .checker-overlay-container .checker-overlay {
-    top: -100px;
-  }
 }
 
 footer .footer-content {

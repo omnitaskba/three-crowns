@@ -9,9 +9,10 @@ $(document).ready(() => {
     });
 
     function calcLineHieght() {
-        const mainContentHeight = $('.main').height();
+        $('.line').css({height: '0px'});
+        const mainContentHeight = $(document).height();
         $('.line-container .line').css({
-            // height: mainContentHeight - 5000 + 'px',
+            height: mainContentHeight - 250 + 'px',
         });
     }
 
@@ -23,14 +24,14 @@ $(document).ready(() => {
 
     console.log($(window).width());
 
-    if ($(window).width() > 767) {
-        setTimeout(() => {
-            const scroll = new LocomotiveScroll({
-              el: document.querySelector('[data-scroll-container]'),
-              lerp: 0.1,
-              smooth: true,
-            });
-        }, 250);
-    }
+    // if ($(window).width() > 767) {
+    //     setTimeout(() => {
+    //         const scroll = new LocomotiveScroll({
+    //           el: document.querySelector('[data-scroll-container]'),
+    //           lerp: 0.1,
+    //           smooth: true,
+    //         });
+    //     }, 250);
+    // }
 
 });

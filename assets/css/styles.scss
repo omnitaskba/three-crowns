@@ -219,42 +219,6 @@ a {
             opacity: 0.8;
         }
     }
-    .hero-header {
-        z-index: 99;
-        position: absolute;
-        top: 0;
-        height: 110px;
-        width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.21);
-        &.parallax {
-            // top: 60px;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .header-logo {
-                max-width: 225px;
-                img {
-                    width: 100%;
-                }
-            }
-        }
-        @media (max-width: 500px) {
-            height: 55px;
-            .button {
-               display: none;
-            }
-            .container {
-                .header-logo {
-                    max-width: 200px;
-                    img {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
     .container {
         height: 100%;
         position: relative;
@@ -322,6 +286,48 @@ a {
                     animation-iteration-count: 1;
                     animation-timing-function: ease-in;
                     animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+}
+
+.hero-header {
+    z-index: 99;
+    position: absolute;
+    margin-top: 40px;
+    top: 0;
+    height: 110px;
+    width: 100%;
+    @media (min-width: 768px) {
+        max-width: calc(100% - 80px);
+    }
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-logo {
+            max-width: 225px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        height: 55px;
+        .button {
+           display: none;
+        }
+        .container {
+            .header-logo {
+                max-width: 200px;
+                img {
+                    width: 100%;
                 }
             }
         }
@@ -950,7 +956,7 @@ footer {
     &.landing {
         // top: -80px;
         @media (min-width: 500px) {
-            min-height: 500px;
+            // min-height: 500px;
         }
         &[data-scroll-section-id] {
             top: -80px;
@@ -980,7 +986,7 @@ footer {
             top: -70px;
             z-index: 9;
             @media (min-width: 501px) {
-                top: -100px;
+                // top: -100px;
             }
         }
     }
