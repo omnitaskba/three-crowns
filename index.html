@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/js/libs/locomotive-scroll-master/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="./assets/js/libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/js/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    
     <script src="./assets/js/libs/j-video-background/lib/j-video-background.js"></script>
     <script src="./assets/js/libs/locomotive-scroll-master/dist/locomotive-scroll.min.js"></script>
+    <script src='./assets/js/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js'></script>
     <script src="./assets/js/main.js"></script>
-    
     <title>Three Crowns - Home</title>
 </head>
 <body>
@@ -109,20 +109,20 @@
             <div class="container hide-mobile">
                 <div class="portfolio-header">
                     <h2 class="section-heading">Portfolio</h2>
-                    <div class="carousel-progress">
+                    <!-- <div class="carousel-progress">
                         <div class="carousel-active"></div>
-                    </div>
+                    </div> -->
                     <div class="carousel-controls">
-                        <div class="carousel-control left">
+                        <div class="carousel-control left desktop-portfolio-prev">
                             <span class="arrow"></span>
                         </div>
-                        <div class="carousel-control right">
+                        <div class="carousel-control right desktop-portfolio-next">
                             <span class="arrow"></span>
                         </div>
                     </div>
                 </div>
-                <div class="row px-3">
-                    <div class="col-12 col-lg-4 px-0">
+                <div class="row pl-4 owl-carousel owl-theme desktop-portfolio-owl">
+                    <div class="col-12 px-0">
                         <a href="#">
                             <div style="background-image: url('./assets/images/vertical-1.jpg')" class="portfolio-hover-box">
                                 <div class="border-animation">
@@ -140,7 +140,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-lg-4 px-0">
+                    <div class="col-12 px-0">
                         <a href="#">
                             <div style="background-image: url('./assets/images/vertical-2.jpg')" class="portfolio-hover-box">
                                 <div class="border-animation">
@@ -158,7 +158,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-lg-4 px-0">
+                    <div class="col-12 px-0">
                         <a href="#">
                             <div style="background-image: url('./assets/images/vertical-3.jpg')" class="portfolio-hover-box">
                                 <div class="border-animation">
@@ -176,31 +176,127 @@
                             </div>
                         </a>
                     </div>
+                    <div class="col-12 px-0">
+                        <a href="#">
+                            <div style="background-image: url('./assets/images/vertical-1.jpg')" class="portfolio-hover-box">
+                                <div class="border-animation">
+                                    
+                                </div>
+                                <div class="hover-wrapper d-flex flex-column justify-content-between h-100">
+                                    <div class="top-text-wrapper">
+                                        <span class="hover-box-year">2021</span>
+                                        <h3>Schofield Publishing UK</h3>
+                                    </div>
+                                    <div class="hidden-text-wrapper">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 px-0">
+                        <a href="#">
+                            <div style="background-image: url('./assets/images/vertical-2.jpg')" class="portfolio-hover-box">
+                                <div class="border-animation">
+                                    
+                                </div>
+                                <div class="hover-wrapper d-flex flex-column justify-content-between h-100">
+                                    <div class="top-text-wrapper">
+                                        <span class="hover-box-year">2021</span>
+                                        <h3>Studioworx</h3>
+                                    </div>
+                                    <div class="hidden-text-wrapper">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 px-0">
+                        <a href="#">
+                            <div style="background-image: url('./assets/images/vertical-3.jpg')" class="portfolio-hover-box">
+                                <div class="border-animation">
+                                    
+                                </div>
+                                <div class="hover-wrapper d-flex flex-column justify-content-between h-100">
+                                    <div class="top-text-wrapper">
+                                        <span class="hover-box-year">2021</span>
+                                        <h3>TBC Digital Inc.</h3>
+                                    </div>
+                                    <div class="hidden-text-wrapper">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 px-0">
+                        <a href="#">
+                            <div style="background-image: url('./assets/images/vertical-2.jpg')" class="portfolio-hover-box">
+                                <div class="border-animation">
+                                    
+                                </div>
+                                <div class="hover-wrapper d-flex flex-column justify-content-between h-100">
+                                    <div class="top-text-wrapper">
+                                        <span class="hover-box-year">2021</span>
+                                        <h3>Schofield Publishing UK</h3>
+                                    </div>
+                                    <div class="hidden-text-wrapper">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="hide-desktop pb-5">
-                <div class="container">
+                <div class="container position-relative">
                     <div class="portfolio-header">
                         <h2 class="section-heading">Portfolio</h2>
-                        <div class="carousel-progress">
+                        <!-- <div class="carousel-progress">
                             <div class="carousel-active"></div>
-                        </div>
+                        </div> -->
                         <div class="carousel-controls">
-                            <div class="carousel-control left">
+                            <div class="carousel-control left portfolio-prev">
                                 <span class="arrow"></span>
                             </div>
-                            <div class="carousel-control right">
+                            <div class="carousel-control right portfolio-next">
                                 <span class="arrow"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-items-wrapper">
+                    <div class="owl-carousel owl-theme portfolio-items-wrapper">
                         <a href="#">
                             <div class="portfolio-item-mobile">
                                 <div style="background-image: url('https://via.placeholder.com/400x400')" class="portfolio-item-img"></div>
                                 <div class="portfolio-item-text mt-3">
                                     <span class="portfolio-mobile-year">2020</span>
                                     <h3>Schofield Publishing UK</h3>
+                                    <p class="potrfolio-item-mobile-snippet">
+                                        Studioworx is an Award Winning Creative Digital Agency specialising in eCommerce. We Provide Magento, Kooomo & BigCommerce Certified web stores for Maximum ROI & Brand awareness.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="portfolio-item-mobile">
+                                <div style="background-image: url('https://via.placeholder.com/400x400')" class="portfolio-item-img"></div>
+                                <div class="portfolio-item-text mt-3">
+                                    <span class="portfolio-mobile-year">2020</span>
+                                    <h3>Schofield Publishing UK 2</h3>
+                                    <p class="potrfolio-item-mobile-snippet">
+                                        Studioworx is an Award Winning Creative Digital Agency specialising in eCommerce. We Provide Magento, Kooomo & BigCommerce Certified web stores for Maximum ROI & Brand awareness.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="portfolio-item-mobile">
+                                <div style="background-image: url('https://via.placeholder.com/400x400')" class="portfolio-item-img"></div>
+                                <div class="portfolio-item-text mt-3">
+                                    <span class="portfolio-mobile-year">2020</span>
+                                    <h3>Schofield Publishing UK 3</h3>
                                     <p class="potrfolio-item-mobile-snippet">
                                         Studioworx is an Award Winning Creative Digital Agency specialising in eCommerce. We Provide Magento, Kooomo & BigCommerce Certified web stores for Maximum ROI & Brand awareness.
                                     </p>
@@ -252,31 +348,31 @@
                                 </div>
                             </a>
                             <span class="article-read-time">4 min read</span>
-                            <a href="article.html"><h3 class="article-title">Healthpath investment</h3></a>
+                            <a href="/article.html"><h3 class="article-title">Healthpath investment</h3></a>
                             <p class="article-snippet">A dynamic and flexible strategic leader, Andrew has delivered impressive growth results with an excellent track record in founding new companies. He has done this by building strong management teams, launching new products, acquiring businesses and achieving outstanding levels of success in their turnarounds, integration and eventual divestures.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="news-article">
-                            <a href="article.html">
+                            <a href="/article.html">
                                 <div class="article-image-wrapper">
                                     <img src="./assets/images/article-4.jpg" alt="">
                                 </div>
                             </a>
                             <span class="article-read-time">4 min read</span>
-                            <a href="article.html"><h3 class="article-title">Healthpath investment</h3></a>
+                            <a href="/article.html"><h3 class="article-title">Healthpath investment</h3></a>
                             <p class="article-snippet">A dynamic and flexible strategic leader, Andrew has delivered impressive growth results with an excellent track record in founding new companies. He has done this by building strong management teams, launching new products, acquiring businesses and achieving outstanding levels of success in their turnarounds, integration and eventual divestures.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="news-article">
-                            <a href="article.html">
+                            <a href="/article.html">
                                 <div class="article-image-wrapper">
                                     <img src="./assets/images/article-5.jpg" alt="">
                                 </div>
                             </a>
                             <span class="article-read-time">4 min read</span>
-                            <a href="article.html"><h3 class="article-title">Healthpath investment</h3></a>
+                            <a href="/article.html"><h3 class="article-title">Healthpath investment</h3></a>
                             <p class="article-snippet">A dynamic and flexible strategic leader, Andrew has delivered impressive growth results with an excellent track record in founding new companies. He has done this by building strong management teams, launching new products, acquiring businesses and achieving outstanding levels of success in their turnarounds, integration and eventual divestures.</p>
                         </div>
                     </div>
@@ -285,25 +381,49 @@
             <div class="container hide-desktop news-mobile">
                 <div class="news-header">
                     <h2 class="section-heading">News</h2>
-                    <div class="carousel-progress">
+                    <!-- <div class="carousel-progress">
                         <div class="carousel-active"></div>
-                    </div>
+                    </div> -->
                     <div class="carousel-controls">
-                        <div class="carousel-control left">
+                        <div class="carousel-control left news-prev">
                             <span class="arrow"></span>
                         </div>
-                        <div class="carousel-control right">
+                        <div class="carousel-control right news-next">
                             <span class="arrow"></span>
                         </div>
                     </div>
                 </div>
-                <div class="news-items-wrapper">
+                <div class="owl-carousel news-items-wrapper">
                     <a href="/article.html">
                         <div class="news-item-mobile">
                             <div style="background-image: url('https://via.placeholder.com/400x400')" class="news-item-img"></div>
                             <div class="news-item-text mt-3">
                                 <span class="news-mobile-year">2020</span>
                                 <h3>Schofield Publishing UK</h3>
+                                <p class="news-item-mobile-snippet">
+                                    Studioworx is an Award Winning Creative Digital Agency specialising in eCommerce. We Provide Magento, Kooomo & BigCommerce Certified web stores for Maximum ROI & Brand awareness.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/article.html">
+                        <div class="news-item-mobile">
+                            <div style="background-image: url('https://via.placeholder.com/400x400')" class="news-item-img"></div>
+                            <div class="news-item-text mt-3">
+                                <span class="news-mobile-year">2020</span>
+                                <h3>Schofield Publishing UK 2</h3>
+                                <p class="news-item-mobile-snippet">
+                                    Studioworx is an Award Winning Creative Digital Agency specialising in eCommerce. We Provide Magento, Kooomo & BigCommerce Certified web stores for Maximum ROI & Brand awareness.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/article.html">
+                        <div class="news-item-mobile">
+                            <div style="background-image: url('https://via.placeholder.com/400x400')" class="news-item-img"></div>
+                            <div class="news-item-text mt-3">
+                                <span class="news-mobile-year">2020</span>
+                                <h3>Schofield Publishing UK 3</h3>
                                 <p class="news-item-mobile-snippet">
                                     Studioworx is an Award Winning Creative Digital Agency specialising in eCommerce. We Provide Magento, Kooomo & BigCommerce Certified web stores for Maximum ROI & Brand awareness.
                                 </p>
