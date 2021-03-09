@@ -105,6 +105,15 @@ body {
   }
 }
 
+.section-heading.small {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 3;
+  letter-spacing: -0.38px;
+  margin-bottom: 20px !important;
+  margin-top: 40px !important;
+}
+
 .button {
   color: #fff;
   height: 50px;
@@ -161,6 +170,28 @@ a.button:hover {
 
 @media (max-width: 767px) {
   .article-main:before {
+    display: none;
+  }
+}
+
+.privacy-main {
+  position: relative;
+}
+
+.privacy-main:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 2px;
+  background-color: rgba(217, 220, 222, 0.4);
+  height: calc(100% + 150px);
+  top: 140px;
+  left: 0;
+  z-index: 5;
+}
+
+@media (max-width: 767px) {
+  .privacy-main:before {
     display: none;
   }
 }
@@ -1347,45 +1378,60 @@ footer .footer-meta-mobile a {
   color: #fff;
 }
 
-.article-body {
+.article-body, .privacy-body {
   margin-top: 50px;
   padding-left: 137px;
 }
 
 @media (max-width: 991px) {
-  .article-body {
+  .article-body, .privacy-body {
     padding-left: 30px;
   }
 }
 
 @media (max-width: 500px) {
-  .article-body {
+  .article-body, .privacy-body {
     padding-left: 0;
   }
 }
 
-.article-body .article-section .article-intro-text {
+.article-body .section-heading:not(.small), .privacy-body .section-heading:not(.small) {
+  margin-bottom: 50px !important;
+  margin-top: 120px !important;
+}
+
+.article-body .article-section .article-intro-text, .privacy-body .article-section .article-intro-text {
   font-size: 25px;
 }
 
 @media (max-width: 500px) {
-  .article-body .article-section .article-intro-text {
+  .article-body .article-section .article-intro-text, .privacy-body .article-section .article-intro-text {
     font-size: 20px;
   }
 }
 
-.article-body .article-section .section-heading {
+.article-body .article-section .section-heading, .privacy-body .article-section .section-heading {
   margin: 60px 0;
 }
 
-.article-body p {
+.article-body p, .privacy-body p {
   line-height: 39px;
 }
 
 @media (max-width: 500px) {
-  .article-body p {
+  .article-body p, .privacy-body p {
     line-height: 32px;
   }
+}
+
+.privacy-body {
+  margin-top: 100px;
+}
+
+.privacy-body p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
 }
 
 .quote {
